@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title>Welcome</title>
+        
+        
+          <style>
+
+          .mySlides {display: relative}
+
+          .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+          }
+
+          @-webkit-keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+          }
+
+          @keyframes fade {
+          from {opacity: .4} 
+          to {opacity: 1}
+          }
+          div.relative1 {
+          position: relative;
+          width: maximum;
+          height: 140px;
+          background-color: black;
+          background-image: url("static/movies2.jpg");
+          border-radius:5px;
+  
+        } 
+
+          div.relative2 {
+          position: relative;
+          top: 5px;
+          width:maximum ;
+          height: 600px;
+          /*background-image: url("static/movie4.jpg");*/
+          background-color: black;
+          border-radius:5px;
+         }
+
+          div.relative3{
+          position: relative;
+          width :maximum;
+          height: 180px;
+          top :10px;
+          background-color: black;
+          border-radius:5px;
+          padding: 10px 20px;
+         }
+
+         .textPos {
+          position:absolute;
+          top: 40%;
+          left: 150px;
+         }
+
+         .imagePos1{
+           position:absolute;
+           top:2%;
+           left:10px;
+         }
+
+         img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+         } 
+
+         
+
+         .button {
+          position: absolute;
+          bottom: 50px;
+          right: 570px;
+          background-color: white;
+          border: none;
+          color: white;
+          padding: 10px 20px;
+          text-align: center;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+          }
+
+          
+
+            .button:hover {
+           box-shadow: 0 12px 16px 0 rgba(243, 240, 240, 0.979),0 17px 50px 0 rgba(241, 240, 240, 0.966);
+           }
+
+           .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            }
+
+            .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+            }
+
+
+</style>
+</head>
+<body>
+
+
+<div class="relative1">
+    <div class="imagePos1">
+        <img src="static/MoviesLogo.png" width="120" height="150">
+    </div>
+    <div class = "textPos">
+        <font face = "garamond" size = "6" color="white">The Movie Recommendation System</font>
+    </div>
+</div>
+  
+<div class="relative2">
+
+
+  <div class="mySlides fade">
+   
+    <img src="static/movies7.jpg">
+    <form action="{{ url_for('index') }}" method="GET">
+      <button class="button"><font color ="black" size = "4" face = "courier new">Rate Movies Now!</font></button>
+      </form>
+  </div>
+    
+  <div class="mySlides fade">
+    
+    <img src="static/movies2.jpg"> 
+    <form action="{{ url_for('index') }}" method="GET">
+      <button class="button"><font color ="black" size = "4" face = "courier new">Rate Movies Now!</font></button>
+      </form>
+
+  </div>
+
+
+  <div class="mySlides fade">
+    
+    <img src="static/movies3.jpg"> 
+    <form action="{{ url_for('index') }}" method="GET">
+      <button class="button"><font color ="black" size = "4" face = "courier new">Rate Movies Now!</font></button>
+      </form>
+
+  </div>
+
+   <div class="mySlides fade">
+    
+    <img src="static/movies6.jpg"> 
+    <form action="{{ url_for('index') }}" method="GET">
+      <button class="button"><font color ="black" size = "4" face = "courier new">Rate Movies Now!</font></button>
+      </form>
+
+   </div>
+
+   <div class="mySlides fade">
+    
+    <img src="static/movies1.jpg"> 
+    <form action="{{ url_for('index') }}" method="GET">
+      <button class="button"><font color ="black" size = "4" face = "courier new">Rate Movies Now!</font></button>
+      </form>
+
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="static/movies8.jpg"> 
+    <form action="{{ url_for('index') }}" method="GET">
+      <button class="button"><font color ="black" size = "4" face = "courier new">Rate Movies Now!</font></button>
+      </form>
+
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="static/movies9.jpg"> 
+    <form action="{{ url_for('index') }}" method="GET">
+      <button class="button"><font color ="black" size = "4" face = "courier new">Rate Movies Now!</font></button>
+      </form>
+
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+</div>
+
+<div class="relative3">
+
+  <center><font color ="white" size="4" face="courier new">About</font></center>
+
+  <p><font color ="white" size="3" face="courier new">As in today's world where movies have beena a cruicial part of our life,it remains of great importance that you see your beloved movies and movies which you might like. 
+    So here we are to give you away this facility to watch movies which you most probably would like watching.
+    This Application gives you,your choice of movies. The Movies you want to see , you would like watching
+    based upon your ratings that you will give to the movies after clicking the above button.
+    So are you ready to save your time as using this app would hardly take 2 mins and you will have your movies.</font>
+    <br>
+    <center><font color ="white" size="4" face="courier new">Enjoy Your Stuff!</font></center></center>
+  </p>
+
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+    
+</body>
+</html>
+
