@@ -1,0 +1,54 @@
+name: RecSysEnv
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - babel=2.8.0=py_0
+  - certifi=2019.11.28=py36h9f0ad1d_1
+  - click=7.0=py36_0
+  - flask=1.1.1=py_0
+  - flask-babel=1.0.0=py_0
+  - flask_table=0.5.0=py_0
+  - intel-openmp=2020.0=166
+  - itsdangerous=1.1.0=py36_0
+  - jinja2=2.11.1=py_0
+  - joblib=0.14.1=py_0
+  - libblas=3.8.0=15_mkl
+  - libcblas=3.8.0=15_mkl
+  - liblapack=3.8.0=15_mkl
+  - markupsafe=1.1.1=py36he774522_0
+  - mkl=2020.0=166
+  - numpy=1.18.1=py36hc71023c_0
+  - pip=20.0.2=py36_1
+  - pymongo=3.9.0=py36ha925a31_0
+  - python=3.6.10=h9f7ef89_0
+  - python_abi=3.6=1_cp36m
+  - pytz=2019.3=py_0
+  - scikit-surprise=1.1.0=py36hc8d92b1_1001
+  - setuptools=46.0.0=py36_0
+  - six=1.14.0=py_1
+  - sqlite=3.31.1=he774522_0
+  - vc=14.1=h0510ff6_4
+  - vs2015_runtime=14.16.27012=hf0eaf9b_1
+  - werkzeug=0.16.0=py_0
+  - wheel=0.34.2=py36_0
+  - wincertstore=0.2=py36h7fe50ca_0
+  - pip:
+    - chardet==3.0.4
+    - django==2.2
+    - flask-session==0.3.1
+    - idna==2.8
+    - omdb==0.10.1
+    - omdbapi==0.5.1
+    - pandas==0.24.2
+    - pillow==6.0.0
+    - python-dateutil==2.8.1
+    - requests==2.21.0
+    - scikit-learn==0.20.3
+    - scipy==1.2.1
+    - sqlparse==0.3.1
+    - tqdm==4.31.1
+    - urllib3==1.24.3
+prefix: C:\Users\This PC\Anaconda3\envs\RecSysEnv
+
